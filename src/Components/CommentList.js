@@ -3,7 +3,7 @@ import Comment from './Comment'
 
 const CommentList = ({comments}) => {
   return comments?.map((cmnt, index)=>(
-        <div>
+        <div key={index}>
             <Comment key={index} data={cmnt}/>
             <div className='pl-5 ml-5 border border-r-0 border-y-0 border-l-black'>
                 <CommentList comments={cmnt.replies}/>

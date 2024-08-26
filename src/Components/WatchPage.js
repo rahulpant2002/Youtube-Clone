@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import CommentContainer from './CommentContainer';
 import { API_KEY } from '../utils/constant';
 import WatchVideoInfo from './WatchVideoInfo';
+import LiveChat from './LiveChat';
 
 const WatchPage = () => {
     const {videoId} = useParams();
@@ -24,8 +25,9 @@ const WatchPage = () => {
     
   return (
     <div>
-      <div className='pt-5 pl-[60px]'>
+      <div className='flex pt-5 pl-[60px]'>
         <iframe className='w-[1000px] h-[500px] rounded-md' src={`https://www.youtube.com/embed/${videoId}`} ></iframe>
+        <LiveChat/>
       </div>
       <WatchVideoInfo info={info} />
       <CommentContainer/>
