@@ -4,7 +4,7 @@ import YouTubeLogo from '../utils/YouTubeIcon.png'
 import UserIcon from '../utils/UserIcon.png'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleMenu } from '../utils/ReduxStore/appSlice'
-import { YoutubeSearchAPI } from '../utils/constant'
+import { YoutubeSearchSuggestionAPI } from '../utils/constant'
 import { addCache } from '../utils/ReduxStore/cacheSlice'
 
 const Head = () => {
@@ -28,7 +28,7 @@ const Head = () => {
   }, [searchText])
 
   const getSuggestions = async()=>{
-    const data = await fetch(YoutubeSearchAPI+searchText);
+    const data = await fetch(YoutubeSearchSuggestionAPI+searchText);
     const json = await data.json();
     setSuggestions(json[1]);
     dispatch(addCache({

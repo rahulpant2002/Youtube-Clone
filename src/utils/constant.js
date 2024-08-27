@@ -1,5 +1,5 @@
-export const API_KEY = 'AIzaSyCY-ZyNvEbpVUK0a0LtLXk5sZdWAStI4So';
+export const API_KEY = 'AIzaSyDAqLcC8TLLml4uMc__HecfFFrcVo2dYxc';
 
-export const YoutubeVideosAPI = 'https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=' + API_KEY;
+export let YoutubeVideosAPI = 'https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=28&regionCode=IN&q=sports|culture|movies|songs&ports&key=' + API_KEY;
 
-export const YoutubeSearchAPI = 'http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q='
+export const YoutubeSearchSuggestionAPI = 'http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q='

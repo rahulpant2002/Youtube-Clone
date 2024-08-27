@@ -12,7 +12,6 @@ const LiveChat = () => {
     useEffect(()=>{
 
         const id = setInterval(()=>{
-            console.log("API Calling");
             dispatch(addMessages({name : generateRandomName(), text : generateRandomMessage(30)}));
         }, 1500);
 

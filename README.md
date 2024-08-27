@@ -9,3 +9,4 @@
 - Debouncing, CacheStorage is done for minimum API calls.
 - N level nested Comments is added.
 - Live Chat Feature is added with optimisation using Random Message Generate function.
+- Infinite Scroll and Shimmer Effect added.

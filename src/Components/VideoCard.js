@@ -6,7 +6,7 @@ const VideoCard = ({info}) => {
     const {viewCount} = statistics;
 
   return (
-    <div className='w-[20rem] p-2 m-2 shadow-md cursor-pointer'>
+    <div className='w-[20rem] p-2 m-2 shadow-md cursor-pointer rounded-md'>
       <img className='rounded-lg' src={thumbnails?.high?.url} alt="thumbnail" />
       <div className='font-bold py-2'>{title}</div>
       <div>{channelTitle}</div>
